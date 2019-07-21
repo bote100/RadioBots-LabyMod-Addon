@@ -1,0 +1,10 @@
+{
+  "uuid": "%uuid%",
+  "name": "RadioBotsEU Addon",
+  "mainClass": "net.bote.addons.radiobots.RadioBotsAddon",
+  "description": "Control your RadioBots bot with Minecraft!",
+  "version": 1,
+  "author": "bote100",
+  "category": 2,
+  "icon": "https://3.radiobots.eu/assets/img/rdbots.png"
+}
