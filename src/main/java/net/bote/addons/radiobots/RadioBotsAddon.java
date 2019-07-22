@@ -19,7 +19,6 @@ import net.labymod.settings.elements.NumberElement;
 import net.labymod.settings.elements.SettingsElement;
 import net.labymod.settings.elements.StringElement;
 import net.labymod.utils.Material;
-
 import java.util.List;
 
 /**
