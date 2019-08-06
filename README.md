@@ -4,6 +4,11 @@ I created with my [RadioBots Java API](https://github.com/bote100/RadioBots-Java
 You are able to manage your bot with simple chat commands and display informations about the current selected bot on your
 ingame screen (Module).
 
+### !! Compiling !!
+To compile the sourcecode you have to add all needed dependencies and run the command ```gradlew fatJar```. After that you
+must enter the jar as example with WinRAR and remove the ``assets`` and ``net.labymod`` folder.
+
+
 ### Features
 
 * 3 diffrent modules (Display: volume, current server and song)
@@ -12,10 +17,6 @@ ingame screen (Module).
 ![alt Chat commands](https://i.imgur.com/CuhtrBc.png)<br>
 <br>
 ![alt 3 modules](https://i.imgur.com/f7S9bYo.png)
-
-### !! Compiling !!
-To compile the sourcecode you have to add all needed dependencies and run the command ```gradlew fatJar```. After that you
-must enter the jar as example with WinRAR and remove the ``assets`` and ``net.labymod`` folder.
 
 ### Usement
 
