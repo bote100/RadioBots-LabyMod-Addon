@@ -51,7 +51,7 @@ public class RadioBotLogin {
 
     private JSONObject requestData(Map<String, String> params, RBAPIAuth auth) throws IOException {
 
-        HttpGet httpGet = new HttpGet("https://api.radiobots.eu/v3/utils/account/login.php");
+        HttpGet httpGet = new HttpGet("https://api-1.radiobots.eu/v3/utils/account/login.php");
 
         JSONObject requestData = new JSONObject();
         params.keySet().forEach(key -> requestData.put(key, params.get(key)));
