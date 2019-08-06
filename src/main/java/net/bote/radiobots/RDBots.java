@@ -52,7 +52,7 @@ public class RDBots {
     }
 
     public static String getMusicTitle(String url) {
-        HttpGet httpGet = new HttpGet("https://3.radiobots.eu/php/bots/ts3.php?action=titledata&url=" + url);
+        HttpGet httpGet = new HttpGet("https://api-1.radiobots.eu/v3/teamspeak/utils/checksong.php?&url=" + url);
 
         CloseableHttpClient client = HttpClientBuilder.create().setUserAgent("PostmanRuntime/7.15.0").build();
 
