@@ -13,6 +13,10 @@ ingame screen (Module).
 <br>
 ![alt 3 modules](https://i.imgur.com/f7S9bYo.png)
 
+### !! Compiling !!
+To compile the sourcecode you have to add all needed dependencies and run the command ```gradlew fatJar```. After that you
+must enter the jar as example with WinRAR and remove the ``assets`` and ``net.labymod`` folder.
+
 ### Usement
 
 1. Create API token in your RadioBots interface. (/account)
