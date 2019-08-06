@@ -54,7 +54,10 @@ public class RadioBotsAddon extends LabyModAddon {
      * Called when the addon gets enabled
      */
     @Override
-    public void onEnable() { instance = this; }
+    public void onEnable() {
+        instance = this;
+        System.out.println("Enable RadioBots Addon by bote100");
+    }
 
     /**
      * Called when this addon's config was loaded and is ready to use
@@ -96,8 +99,6 @@ public class RadioBotsAddon extends LabyModAddon {
                         getApi().registerModule(botOnlineModule);
                         getApi().registerModule(new BotVolumeModule(currentBot));
 
-                        RBRequest.setDeveloperMode(true);
-
                         getApi().getEventManager().register(new RadioBotControlListener());
 
                         getApi().registerForgeListener(currentStreamModule);
@@ -107,7 +108,7 @@ public class RadioBotsAddon extends LabyModAddon {
 
                 });
             } catch (Exception e) {
-                getApi().displayMessageInChat(getPrefix() + "§4" + e.getMessage());
+                System.err.println("Error while starting RB Addon: " + e.getMessage());
                 e.printStackTrace();
             }
 
