@@ -34,7 +34,7 @@ public class RBRequest {
 
     public static JSONObject request(RadioBotType type, String service, Map<String, String> params, RBAPIAuth auth) throws IOException {
 
-        HttpGet httpGet = new HttpGet("https://api-1.radiobots.eu/v3/" + type.toString().toLowerCase() + "/bot/" + service + ".php");
+        HttpGet httpGet = new HttpGet("http://api-1.radiobots.eu/v3/" + type.toString().toLowerCase() + "/bot/" + service + ".php");
 
         JSONObject requestData = new JSONObject();
         params.keySet().forEach(key -> requestData.put(key, params.get(key)));
